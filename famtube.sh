@@ -67,7 +67,6 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         --download-archive "$ARCHIVE_FILE" \
         --no-overwrites \
         --restrict-filenames \
-        --print "Downloading: %(title)s" \
         --quiet \
         --no-warnings \
         "$channel_url/videos" 2>&1 | while read -r dl_line; do
